@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacorda &amp; Wenceslao's Portfolio</title>
+    <link rel="icon" href="https://i.imgur.com/SaxUJar.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">  
+    
+    <style>
+
+    .image-container {
+        flex-wrap: nowrap; /* ensures they stay in one row */
+        overflow-x: auto; /* adds horizontal scroll if they don’t fit */
+        justify-content: center; /* keeps them centered */
+        padding: 10px; /* adds spacing for better layout */
+        margin-top: -50px;
+    }
+
+    .image-container img {
+        width: auto; /* adjust as needed */
+        height: 180px;
+        
+    }
+
+      nav {
+        padding: 10px;
+      }
+      h1 {
+        position: relative;
+        top: -50px;
+        display: block;
+      }
+      .subheading-container {
+        position: relative;
+        top: -50px;
+        display: block;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- navbar/header -->
+    <header class="nav-header">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+       <nav>
+           <ul>
+               <li><a href="#home" onclick="showSection('home')">Home</a></li>
+               <li><a href="#about" onclick="showSection('about')">About</a></li>
+               <li><a href="#mission" onclick="showSection('mission')">Mission</a></li>
+               <li><a href="#books" onclick="showSection('books')">Books</a></li>
+               <li><a href="#recommendations" onclick="showSection('recommendations')">Recommendations</a></li>
+               <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+           </ul>
+       </nav>
+   </header> 
+
+    <!-- hero section --> 
+    <header class="home"> 
+        <div class="image-container">
+            <img src="https://i.imgur.com/aigm1wM.png" alt="car" style="width: 400px; height:100%;">
+        </div>
+
+        <h1>Litlen</h1>
+        <div class="subheading-container">
+            <p><b>CREATOR'S CODE NAME</b></p>
+            <p><strong> ⋆˙⟡. lao & jin .⋆˚࿔</strong></p>    
+        </div>   
+    </header>
+  
+     
+  <!-- js for toggle -->
+    
+   
+   <section id="about">   
+    <h1 style="text-align: justify; justify-content: center; margin-top: 90px; font-weight: normal; font-size: 30px;">Welcome to Our Blog – A Journey Through IT and Web Design.</h1>   
+     <div class="container">   
+         <img src="https://i.imgur.com/WjG4BLL.jpeg" alt="your image">   
+                <div class="grid">
+                 <div class="card" style="width: auto;">
+         <div class="text">   
+            <h2 style="text-align: center; font-weight: normal;">Mary Jane Nacorda – Crafting Digital Experiences</h2>  
+      <p style="text-align: justify; line-height: 1.6; width: 80%; margin: 0 auto; font-size: 20px; font-family: sans-serif;">  
+      Hi there! I'm Mary Jane Nacorda, an aspiring web designer currently pursuing a BS in Information Technology     
+      at Cebu Eastern College Incorporated. My passion lies in creating visually stunning and user-friendly websites  
+      that bring ideas to life. In this blog, I’ll be sharing my journey as a web designer—my inspirations, the challenges  
+      I face, and the lessons I learn along the way. From front-end development to UX/UI principles, I'll document my growth,   
+      hoping to inspire others who dream of making a mark in the digital world. Expect blog posts on web design trends, coding   
+      tips, project showcases, and personal reflections on life as an IT student. Let's build something amazing together!  
+      </p>  
+         </div>   
+         </div> 
+         </div>
+     </div>     
+     <div class="container">  
+     <img src="https://i.imgur.com/8kk06mM.jpeg" alt="your image">   
+     <div class="grid"> 
+                 <div class="card" style="width: auto;">
+     <div class="text">  
+      <h2 style="text-align: center; font-weight: normal;">Charlo Wenceslao – Embracing the Tech World</h2>
+      <p style="text-align: justify; line-height: 1.6; width: 80%; margin: 0 auto; font-size: 20px; font-family: sans-serif;">  
+      Hello! I'm Charlo Wenceslao, a first-year BSIT student at Cebu Eastern College Incorporated with a strong curiosity for technology,  
+      problem-solving, and innovation. My journey in IT is just beginning, but I'm excited to explore various fields, from programming and  
+      networking to game development and cybersecurity. Through this blog, I'll be sharing my experiences as a student navigating the tech world—coding challenges,  
+      project breakthroughs, and my growing love for chess (which, believe it or not, enhances strategic thinking in IT!). Whether you’re an aspiring IT student  
+      or just curious about tech, I invite you to join me on this adventure. Let’s learn and grow together!  
+      </p>  
+         </div>   
+         </div> 
+         </div>
+     </div>
+    </section>
+ 
+    <section id="mission">
+      <h2 style="font-size: 30px; font-weight: normal; margin-top: 50px;">OUR MISSION</h2>
+      <div class="grid">
+          <div class="card" style="width: auto;  font-family: sans-serif;">
+              <p style="font-size: 20px;">&copy; 2025 My Website. All rights reserved. <br> 
+                Use of this website constitutes acceptance of our <strong>&#169; Privacy Policy</strong> and <em>&#174; Terms of Service</em>. <br>
+                  You can contact us via email at <strong>charlowenceslao&#64;gmail&#46;com, mjnacorda939&#64;gmail&#46;com</strong></p>
+      </div>  
+      </div>
+  </section>
+      
+  <section id="books">
+    <h2 style="font-weight: normal; font-size: 35px;">BOOKS</h2>  
+    <div class="card" style="width: auto; height: auto;">
+    <p style="text-align: justify; line-height: 1.6; width: auto; margin: 0 auto; font-size: 18px; font-weight: normal; font-family: sans-serif;"> Books we like (general explanation) </p><br></div> 
+
+    <div class="grid" style="margin-top: 35px;">
+        <div class="card"><img src="https://i.imgur.com/Qo8J0tG.jpeg" alt="post 1"> 
+          <p>rate: </p> 
+        </div>
+        <div class="card"><img src="https://i.imgur.com/Qo8J0tG.jpeg" alt="post 2"> 
+         <p>rate: </p>  
+        </div>
+        <div class="card"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="post 3"> 
+           <p>rate: </p> 
+        </div> 
+        <div class="card"><img src="https://i.imgur.com/Qo8J0tG.jpeg" alt="post 5"> 
+           <p>rate: </p> 
+        </div>
+        <div class="card"><img src="https://i.imgur.com/Qo8J0tG.jpeg" alt="post 6"> 
+         <p>rate: </p> 
+        </div>
+        <div class="card"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="post 7"> 
+         <p>rate: </p>  
+        </div> 
+        <div class="card"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="post 7"> 
+          <p>rate: </p>
+        </div>
+        <div class="card"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="post 7"> 
+          <p>rate: </p> 
+        </div>
+
+    </div>
+    </section> 
+     
+    <section id="recommendations"> 
+      <h2 style="font-weight: normal; margin-top: 30px;">book reading/downloading sites</h2>  
+              <div class="card" style="width: auto; height: auto;">
+   <p style="text-align: justify; line-height: 1.6; width: 80%; margin: 0 auto; font-size: 20px; font-weight: normal; font-family: sans-serif;"> recommendations and websites where we can read ebooks or download for free ya lao</p></div>
+      <div class="grid" style="margin-top: 35px;">
+          <div class="card" style="width: auto; height: auto;"> 
+              <p>Wallpapers</p> 
+              <iframe src="https://wallpapers.com/" title="Wallpapers" style="height: 250px;"></iframe>
+          </div>
+          <div class="card" style="width: auto; height: auto;">  
+              <p>WallpaperCave</p> 
+              <iframe src="https://wallpapercave.com/" title="WallpaperCave" style="height: 250px;"></iframe>  
+          </div>
+          <div class="card" style="width: auto; height: auto;"> 
+              <p>Pexels</p>   
+              <iframe src="https://www.pexels.com/search/desktop%20wallpaper/" title="pexels" style="height: 250px;"></iframe>
+          </div>
+      </div>         
+  </section> 
+   
+  <section id="contact">
+    <h2 style="margin-top: 30px; font-weight: normal; font-size: 30px;">our favorite reactions ft. ways to connect</h2> 
+
+    <div class="grid" style="margin-top: 35px;"> 
+
+        <div class="card" style="margin-top: 40px;">
+            <h3 style="font-weight: normal;">hers</h3>
+            <p><span style='font-size:50px;'>&#128540; &#128548; &#129395;</span></p>
+        </div>    
+
+        <div class="card"> 
+          <div class="card" style="width: auto;"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="pfp"> 
+          </div>
+        <p style="text-align: justify; line-height: 1.6; width: 80%; margin: 10px auto; font-weight: normal; font-family: sans-serif;">
+           contact details
+        </p> 
+        </div>  
+
+        <div class="card" style="margin-top: 40px;">
+            <h3 style="font-weight: normal;">his</h3> 
+            <p><span style='font-size:50px;'> &#128526; &#128525; &#128572; </span></p> 
+            </div>  
+        <div class="card"> 
+          <div class="card" style="width: auto;"><img src="https://i.imgur.com/DvXakUG.jpeg" alt="pfp"> 
+          </div>
+        <p style="text-align: justify; line-height: 1.6; width: 80%; margin: 10px auto; font-weight: normal; font-family: sans-serif;">
+        contact details
+    </p>
+    </div>   
+</section>
+     
+      
+<!-- general -->
+     <script> 
+    function showSection(sectionId) {
+  // Hide all sections
+  document.querySelectorAll("section").forEach(section => {
+    section.style.display = "none";
+  });
+
+  // Show only the selected section
+  let activeSection = document.getElementById(sectionId);
+  if (activeSection) {
+    activeSection.style.display = "block";
+  }
+
+  // Select the header with class "home"
+  let homeHeader = document.querySelector(".home");
+
+  // Show the "home" header only when the home section is active
+  if (sectionId === "home") {
+    homeHeader.style.display = "block";  // Make sure it appears when home is selected
+  } else {
+    homeHeader.style.display = "none";   // Hide when switching sections
+  }
+}
+
+// Show Home section & make sure "home" header is visible by default
+showSection('home');
+
+
+
+ 
+    
+function toggleMenu() {
+  document.querySelector('nav ul').classList.toggle('show');
+}
+
+// Close the menu when an option is clicked
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', function () {
+    document.querySelector('nav ul').classList.remove('show');
+  });
+});
+
+       
+      
+     </script>
+
+</body>
+    </html>
