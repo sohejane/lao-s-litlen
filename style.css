@@ -5,16 +5,19 @@ body {
   background: url(https://i.imgur.com/FW6Ol49.jpeg) no-repeat center center fixed; 
   background-size: cover;
   color: #d4a276; 
-  backdrop-filter: blur(3px); 
+  backdrop-filter: blur(5px); 
 }
 .changa-one-regular {
   font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: normal;
+} 
+p { 
+  line-height: 1.3;
 }
 
 
-/* navbar */ 
+/* NAVBAR */ 
 .nav-header {
   position: fixed;
   top: 10px;
@@ -90,12 +93,10 @@ transition: width 0.3s ease;
 }  
 
 
-/* hero section */ 
-
-/* Wrap images for better positioning */
+/* HERO-SECTION */ 
 .image-container {
   position: absolute;
-  top: 80px; /* Moves images up */
+  top: 80px; 
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -103,13 +104,12 @@ transition: width 0.3s ease;
 }
 
 .image-container img {
-  width: 150px; /* Adjust size */
+  width: 150px; 
   height: auto;
   border-radius: 10px; 
   
 }
 
-/* Ensure header has relative positioning */
 header {
   position: relative;
   display: flex;
@@ -119,13 +119,12 @@ header {
   padding: 100px 80px 50px;
 }
 
-/* Make sure title and subheading are centered */
 header h1 {
   font-size: 90px; 
   font-family: "changa one", sans-serif;
   text-transform: uppercase; 
   margin-bottom: auto;
-  margin-top: 300px; /* Push it down to make space for images */
+  margin-top: 300px; 
 }
 
 header .subheading-container { 
@@ -145,7 +144,7 @@ header .subheading-container p {
 }
 
 
-/* sections */
+/* SESCTIONS */
 section {
   padding: 50px 20px;
   text-align: center;
@@ -174,18 +173,18 @@ section {
 }
 
 .card {
-  background: rgba(51, 43, 43, 0.2);   
-  border-radius: 15px;
+  background: rgba(51, 43, 43, 0.452);   
+  border-radius: 15px;  
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); 
   padding: 20px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.151); 
+  border: 5px groove rgba(15, 15, 15, 0.3); 
   width: 250px; 
   height: 50%;
 }
 
-.card img, .card video {
+.card img {
   width: 100%;  
   height: 50%;
   border-radius: 15px;
@@ -194,10 +193,43 @@ section {
 
 .contact-info p {
   font-size: 18px;
+} 
+ 
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  margin: 45px auto 0 auto; 
+  border-radius: 25px;     
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content; 
+  position: relative;
 }
 
-/* 📌 RESPONSIVE DESIGN */
 
+.footer-container {
+  display: flex; /* Enables our flexbox */
+  justify-content: center; 
+  align-items: center; 
+}
+
+.footer-container a img {
+  width: 40px;
+  height: auto; 
+  padding: 3px 1px; 
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out; 
+  color: rgba(0, 0, 0, 0.479); 
+} 
+
+.footer-container a img:hover {
+  transform: scale(1.2);
+}
+
+
+/* RESPONSIVE DESIGN SECTION */
 /* for tablets */
 @media (max-width: 900px) {
   .container {
@@ -222,8 +254,39 @@ section {
   nav a:hover { 
     transition: all 0.3s ease; 
     padding: 0.5rem 1rem;
+  } 
+  .card img {  
+    width: 100%;
+    height: 60%;
   }
-}
+} 
+ 
+@media screen and (max-width: 800px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(3px);
+      padding: 15px;
+      border-radius: 10px;
+      width: 80%;
+      text-align: center;
+  }
+  nav ul.show {
+      display: flex;
+  }
+  .menu-toggle {
+      display: inline-block;
+  }   
+  .card img {  
+    width: 100%;
+    height: 60%;
+  }
+}  
 
 /* for mobile phones */
 @media (max-width: 600px) {
@@ -257,30 +320,13 @@ section {
 
   header p {
       font-size: 16px;
-  }  
-} 
-@media screen and (max-width: 800px) {
-  nav ul {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(3px);
-      padding: 15px;
-      border-radius: 10px;
-      width: 80%;
-      text-align: center;
+  }   
+  .card img {  
+    width: 100%;
+    height: 60%;
   }
-  nav ul.show {
-      display: flex;
-  }
-  .menu-toggle {
-      display: inline-block;
-  }  
 }  
+
 @media screen and (max-width: 600px) {
   nav ul {
       flex-direction: column;
@@ -288,5 +334,9 @@ section {
   }
   .nav-header {
       width: 95%;
-  }   
+  }    
+  .card img {  
+    width: 100%;
+    height: 60%;
+  }
 }
