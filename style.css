@@ -167,7 +167,7 @@ section {
 
 .grid {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -180,9 +180,8 @@ section {
   padding: 20px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.151); 
   border: 5px groove rgba(15, 15, 15, 0.3); 
-  width: 350px; 
-  height: 50%; 
-  margin: auto;
+  width: 250px; 
+  height: 50%;
 }
 
 .card img {
@@ -250,8 +249,7 @@ footer {
   }
 
   .card {
-      width: 80%; 
-      height: 500px;
+      width: 80%;
   } 
   nav a:hover { 
     transition: all 0.3s ease; 
@@ -260,9 +258,6 @@ footer {
   .card img {  
     width: 100%;
     height: 60%;
-  } 
-  p .crews { 
-    margin-top: 100px 0;
   }
 } 
  
@@ -290,11 +285,7 @@ footer {
   .card img {  
     width: 100%;
     height: 60%;
-  }  
-  .card {
-    width: 80%; 
-    height: 500px;
-} 
+  }
 }  
 
 /* for mobile phones */
@@ -333,11 +324,7 @@ footer {
   .card img {  
     width: 100%;
     height: 60%;
-  }  
-  .card {
-    width: 80%; 
-    height: 900px;
-} 
+  }
 }  
 
 @media screen and (max-width: 600px) {
@@ -350,10 +337,6 @@ footer {
   }    
   .card img {  
     width: 100%;
-    height: 500px;
-  }   
-  .card {
-    width: 80%; 
-    height: 900px;
-} 
+    height: 60%;
+  }
 }
